@@ -9,23 +9,28 @@ const Demo = React.lazy(() => import("@/views/Demo"))
 const routes = [
   {
     path: "/",
-    element: <Navigate to="/home"></Navigate>
+    element: <Navigate to="/home"></Navigate>,
+    auth: true
   },
   {
     path: "/home",
-    element: <Home />
+    element: <Home />,
+    auth: false
   },
   {
     path: "/detail",
-    element: <Detail />
+    element: <Detail />,
+    auth: false
   },
   {
     path: "/entire",
-    element: <Entire />
+    element: <Entire />,
+    auth: false
   },
   {
     path: "/demo",
-    element: <Demo />
+    element: <Demo />,
+    auth: false
   }
 ]
 
